@@ -1,0 +1,153 @@
+<html>
+	<head>
+		<title>project-components</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="cardContainer">
+				<div class="ctrl_scroll">
+					<svg width="2rem" height="2rem" class="sign_saveCard">
+						<use xlink:href="icons/spriteIco.svg#inbox"></use>
+					</svg>
+					<div class="sign_nextCard">save&next</div>
+					<div class="sign_clearCard">
+						<img src="icons/clear.png" />
+					</div>
+					<svg width="1.8rem" height="1.8rem" class="sign_finishProcess">
+						<use xlink:href="icons/spriteIco.svg#stop"></use>
+					</svg>
+				</div>
+				<div class="box card">
+					<div class="card__header">
+						<div class="card__header--name">
+							<label for="name">Word:</label>
+							<input id="name" placeholder="type your word..." />
+						</div>
+						<div class="card__header--schedule">
+							<label for="schedule">Not Schedule</label>
+							<input id="schedule" type="checkbox" />
+						</div>
+						<div class="card__header--favorite">
+							<label for="favorite">Favorite</label>
+							<input id="favorite" type="checkbox" />
+						</div>
+						<div class="card__header--hardiness">
+							<label for="hardiness">Hard word</label>
+							<input id="hardiness" type="checkbox" />
+						</div>
+					</div>
+
+					<div class="card__body">
+						<div class="card__body--header">
+							<div class="container_defType">
+								<label htmlFor="defType">Method:</label>
+								<select defaultValue="Definitions" id="defType" class="defType">
+									<option>A</option>
+									<option>B</option>
+									<option>C</option>
+									<option>D</option>
+								</select>
+							</div>
+							<div class="container_face">
+								<label>state:</label>
+								<button class="front">F</button>
+								<button class="back">B</button>
+							</div>
+							<div class="container_pos">
+								<label>position:</label>
+								<button class="left">L</button>
+								<button class="center">C</button>
+								<button class="right">R</button>
+							</div>
+						</div>
+						<div class="card__body--content">
+							<textarea class="content-textarea" rows="3"></textarea>
+							<div class="content__sign">
+								<div class="sign plus">+</div>
+								<div class="sign minus">-</div>
+							</div>
+						</div>
+					</div>
+					<div class="card__body--ctrl">
+						<div class="sign minus">-</div>
+						<div class="sign plus">+</div>
+						<div class="line"></div>
+					</div>
+					<footer class="card__footer">
+						<div class="card__footer--sign">
+							<div class="sign_open">+</div>
+							<div class="sign_close">-</div>
+						</div>
+						<div class="card__footer--ctrl">
+							<div class="container_defType">
+								<label htmlFor="defType">Method:</label>
+								<select defaultValue="Definitions" id="defType" class="defType">
+									<option>A</option>
+									<option>B</option>
+									<option>C</option>
+									<option>D</option>
+								</select>
+							</div>
+							<div class="container_face">
+								<label>state:</label>
+								<button class="front">F</button>
+								<button class="back">B</button>
+							</div>
+							<div class="container_pos">
+								<label>position:</label>
+								<button class="left">L</button>
+								<button class="center">C</button>
+								<button class="right">R</button>
+							</div>
+						</div>
+						<div class="card__footer--content">
+							<textarea class="content-textarea" rows="1"></textarea>
+							<div class="content__sign">
+								<div class="sign plus">+</div>
+								<div class="sign minus">-</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<div class="box cardInfo">
+					<div class="cardInfo__header">
+						<span>Information</span>
+						<div class="sign">
+							<svg width="10px" class="ctrl">
+								<use xlink:href="icons/spriteIco.svg#arrow" class="sign__open"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="chosenBox">
+						<label htmlFor="defType">Box:</label>
+						<select defaultValue="Definitions" id="defType">
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+						</select>
+					</div>
+					<div class="addSchedule">
+						<label for="schedule">Schedule:</label>
+						<input type="date" id="schedule" name="schedule" />
+					</div>
+					<div class="askMethod">
+						<label htmlFor="defType">question method:</label>
+						<select defaultValue="Definitions" id="defType">
+							<option>A</option>
+							<option>B</option>
+							<option>C</option>
+							<option>D</option>
+						</select>
+						<a class="fancy-button pop-onhover bg-gradient1">
+							<span>create ask method</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="main.js"></script>
+	</body>
+</html>

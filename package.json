@@ -1,0 +1,16 @@
+{
+	"name": "card",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "node-sass -w scss/main.scss style.css"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"node-sass": "^4.13.1",
+		"sass": "^1.25.0"
+	}
+}

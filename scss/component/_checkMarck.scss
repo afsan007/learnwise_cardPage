@@ -1,0 +1,18 @@
+$check_borderWidth: 7px;
+$check_height: 24px;
+$check_width: 12px;
+$check_borderColor: #78b13f;
+
+body {
+	padding: 20px;
+	text-align: center;
+}
+
+.check {
+	display: inline-block;
+	transform: rotate(45deg);
+	height: $check_height;
+	width: $check_width;
+	border-bottom: $check_borderWidth solid $check_borderColor;
+	border-right: $check_borderWidth solid $check_borderColor;
+}
